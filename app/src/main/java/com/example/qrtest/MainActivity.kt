@@ -42,7 +42,9 @@ import com.google.zxing.qrcode.QRCodeWriter
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-
+/*
+Библиотека: https://mvnrepository.com/artifact/com.google.zxing/core/3.5.1
+*/
 class MainActivity : ComponentActivity() {
     val sytes = listOf(
         "https://www.youtube.com/",
