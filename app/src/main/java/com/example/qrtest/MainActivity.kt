@@ -114,7 +114,7 @@ fun rememberQrBitmapPainter(
         mutableStateOf<Bitmap?>(null)
     } //переменная для хранения qr. Будет пересоздавать только при изменении
 
-    LaunchedEffect(bitmap) { //лаун эффект для создания (чтобы не было зависания пока вычисляется)
+    LaunchedEffect(bitmap) { //лаунч эффект для создания (чтобы не было зависания пока вычисляется)
         if (bitmap != null) return@LaunchedEffect
 
         launch(Dispatchers.IO) {
@@ -151,7 +151,7 @@ fun rememberQrBitmapPainter(
                     val pixelColor =
                         if (shouldColorPixel) Color.BLACK else Color.WHITE // установка цвета
 
-                    newBitmap.setPixel(x, y, pixelColor) //закрашивание пиксиля
+                    newBitmap.setPixel(x, y, pixelColor) //закрашивание пикселя
                 }
             }
 
